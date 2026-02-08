@@ -2,12 +2,12 @@ import { ExternalLink, ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
-    title: 'FinanceFlow',
-    category: 'Fintech Platform',
-    description: 'A modern banking dashboard with real-time analytics and seamless transactions.',
-    image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800',
-    color: 'from-blue-500/20 to-cyan-500/20',
-    stats: ['40% faster', '99.9% uptime'],
+    title: 'برج ویلیس (WILLIS TOWER)',
+    category: 'وب‌سایت معماری و املاک لوکس',
+    description: 'طراحی و توسعه یک پلتفرم دیجیتال چندرسانه‌ای برای معرفی یکی از مدرن‌ترین برج‌های تجاری-مسکونی. تمرکز اصلی در این پروژه بر نمایش عظمت سازه و ایجاد تجربه بصری غوطه‌ورکننده (Immersive) برای بازدیدکنندگان بوده است.',
+    image: '/images/project_1.png',
+    color: 'from-gray-900/40 to-slate-800/40',
+    stats: ['۳۵ طبقه هوشمند', 'استاندارد طلایی LEED'],
   },
   {
     title: 'HealthHub',
@@ -64,7 +64,7 @@ export default function Portfolio() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute top-4 right-4 w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:rotate-45">
                   <ExternalLink className="w-5 h-5 text-white" />
