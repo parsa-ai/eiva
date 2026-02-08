@@ -1,11 +1,12 @@
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, ArrowUpRight, XIcon } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const projects = [
   {
     title: 'FinanceFlow',
     category: 'Fintech Platform',
     description: 'A modern banking dashboard with real-time analytics and seamless transactions.',
-    image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/mrnet.png',
     color: 'from-blue-500/20 to-cyan-500/20',
     stats: ['40% faster', '99.9% uptime'],
   },
@@ -36,8 +37,48 @@ const projects = [
 ];
 
 export default function Portfolio() {
+  const [isHide, setIsHide] = useState(true)
+  const [indexOfPrj, setindexOfPrj] = useState(0)
+  useEffect(() => {
+    if (!isHide) {
+
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+    };
+  }, [isHide]);
   return (
     <section id="portfolio" className="py-32 bg-slate-900 relative overflow-hidden">
+      <div onClick={() => { setIsHide(true) }} className={`fixed z-50 bg-slate-900/30 backdrop-blur-lg w-screen h-screen top-0 right-0 ${isHide ? "hidden" : "flex"} justify-center items-center`}>
+
+
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className='w-11/12 xl:w-8/12 h-[80vh] bg-white rounded-xl overflow-hidden relative'
+        >
+          <XIcon
+            onClick={() => setIsHide(true)}
+            className='cursor-pointer absolute top-3 left-3 bg-white stroke-black rounded-xl p-1 w-8 h-8 z-10'
+          />
+
+          <div
+            className='w-full h-full overflow-y-auto'
+            style={{ WebkitOverflowScrolling: "touch" }}
+            dir='ltr'
+          >
+            <img
+              className='w-full object-contain'
+              src={projects[indexOfPrj].image}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -55,16 +96,21 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
+
             <div
               key={index}
               className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-2"
+              onClick={() => {
+                setIsHide(false);
+                setindexOfPrj(index)
+              }}
             >
               <div className="relative h-64 overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-60 group-hover:opacity-40 transition-opacity duration-500`}></div>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-top object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute top-4 right-4 w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:rotate-45">
                   <ExternalLink className="w-5 h-5 text-white" />
@@ -99,6 +145,7 @@ export default function Portfolio() {
                 </button>
               </div>
             </div>
+
           ))}
         </div>
       </div>
