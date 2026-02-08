@@ -13,23 +13,25 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-8 backdrop-blur-sm hover:bg-emerald-500/20 transition-all duration-300 group cursor-default">
           <Sparkles className="w-4 h-4 text-emerald-400 group-hover:rotate-180 transition-transform duration-500" />
-          <span className="text-sm text-emerald-300">Where ideas become digital reality</span>
+          <span className="text-sm text-emerald-300">استودیو ایوا</span>
         </div>
 
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-6 tracking-tight">
-          <span className="inline-block hover:scale-105 transition-transform duration-300">E</span>
-          <span className="inline-block hover:scale-105 transition-transform duration-300">I</span>
-          <span className="inline-block hover:scale-105 transition-transform duration-300">V</span>
           <span className="inline-block hover:scale-105 transition-transform duration-300">A</span>
+          <span className="inline-block hover:scale-105 transition-transform duration-300">V</span>
+          <span className="inline-block hover:scale-105 transition-transform duration-300">I</span>
+          <span className="inline-block hover:scale-105 transition-transform duration-300">E</span>
         </h1>
 
         <p className="text-xl md:text-2xl lg:text-3xl text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed">
-          We design and develop websites that{' '}
-          <span className="text-emerald-400 font-semibold">work</span>.
+          خلق تجربه‌های دیجیتالی که
+          <span className="text-emerald-400 font-semibold"> هویت شما </span>
+          را می‌سازند.
+          .
         </p>
 
         <p className="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
-          Efficiency. Simplicity. Real-world solutions.
+          ما در استودیو ایوا، هنر طراحی را با قدرت تکنولوژی ادغام می‌کنیم تا کسب‌وکار شما در دنیای دیجیتال متمایز دیده شود.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -37,14 +39,14 @@ export default function Hero() {
             href="#portfolio"
             className="group px-8 py-4 bg-emerald-500 text-white rounded-full font-medium hover:bg-emerald-600 transition-all duration-300 flex items-center gap-2 hover:gap-4 hover:shadow-lg hover:shadow-emerald-500/50"
           >
-            View Our Work
+            مشاهده نمونه کارها
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#contact"
             className="px-8 py-4 bg-white/5 backdrop-blur-sm text-white rounded-full font-medium hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20"
           >
-            Get In Touch
+            با تیم ما آشنا شوید
           </a>
         </div>
       </div>

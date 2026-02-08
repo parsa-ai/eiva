@@ -43,13 +43,13 @@ export default function Portfolio() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
-            <span className="text-sm text-emerald-400 font-medium">OUR WORK</span>
+            <span className="text-sm text-emerald-400 font-medium">پروژه ها</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Selected Projects
+            پروژه‌های منتخب
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Real solutions for real businesses. Every project built with purpose.
+            نگاهی به برخی از آخرین همکاری‌های ما با برندهای پیشرو.
           </p>
         </div>
 

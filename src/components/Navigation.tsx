@@ -14,12 +14,12 @@ export default function Navigation() {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'About', href: '#about' },
-    { name: 'Process', href: '#process' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'خانه', href: '#home' },
+    { name: 'پروژه‌ها', href: '#portfolio' },
+    { name: 'درباره ایوا', href: '#about' },
+    { name: 'فرایند', href: '#process' },
+    { name: 'تعرفه', href: '#pricing' },
+    { name: 'سوالات متداول', href: '#faq' },
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function Navigation() {
               href="#contact"
               className="px-6 py-2 bg-emerald-500 text-white rounded-full font-medium hover:bg-emerald-600 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/50"
             >
-              Contact
+              تماس با ما
             </a>
           </div>
 

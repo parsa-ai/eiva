@@ -3,23 +3,23 @@ import { Target, Zap, Users, Heart } from 'lucide-react';
 const values = [
   {
     icon: Target,
-    title: 'Purpose-Driven',
-    description: 'We build with intention. Every pixel, every line of code serves a purpose.',
+    title: 'هدف‌مند و آگاهانه',
+    description: 'ما با هدف می‌سازیم. هر پیکسل و هر خط کد، ماموریتی برای رشد برند شما دارد.',
   },
   {
     icon: Zap,
-    title: 'Efficiency First',
-    description: 'Fast, lean, and effective. No bloat, no unnecessary complexity.',
+    title: 'اولویتی به نام بازدهی',
+    description: 'سریع، بهینه و اثربخش. بدون پیچیدگی‌های بیهوده و با تمرکز بر عملکرد نهایی.',
   },
   {
     icon: Users,
-    title: 'User-Centric',
-    description: 'Your users are our priority. We design experiences they will love.',
+    title: 'کاربرمحوری (User-Centric)',
+    description: 'اولین اولویت ما کاربران شما هستند. تجربه‌هایی خلق می‌کنیم که عاشقش شوند.',
   },
   {
     icon: Heart,
-    title: 'Craft & Care',
-    description: 'We pour our passion into every project, treating it as our own.',
+    title: 'دقت و مهارت (Craft)',
+    description: 'ما عشق و اشتیاقمان را در هر پروژه می‌دمیم و با آن مثل فرزند خودمان رفتار می‌کنیم.',
   },
 ];
 
@@ -32,18 +32,13 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           <div>
             <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
-              <span className="text-sm text-emerald-400 font-medium">ABOUT US</span>
+              <span className="text-sm text-emerald-400 font-medium">درباره ایوا</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              We're not your typical agency
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 ">
+              فراتر از یک آژانس دیجیتال؛ ما شریک رشد شما هستیم.
             </h2>
             <p className="text-xl text-slate-400 mb-6 leading-relaxed">
-              We're a team of designers, developers, and strategists who believe in the power of
-              simplicity. No fluff, no jargon—just digital solutions that work.
-            </p>
-            <p className="text-lg text-slate-400 leading-relaxed">
-              Founded in 2020, EIVA has helped over 100 businesses transform their digital presence.
-              From startups to enterprises, we bring clarity to complexity.
+              در استودیو ایوا (EIVA)، باور داریم که هر ایده بزرگ شایسته یک نمایش بی‌نقص است. تیم ما متشکل از متخصصان خلاق و برنامه‌نویسان با‌تجربه است که با تمرکز بر جزئیات و نیاز کاربر ایرانی، راه‌حل‌هایی نوآورانه خلق می‌کنند. ما فقط کد نمی‌زنیم و طرح نمی‌کشیم؛ ما داستان برند شما را روایت می‌کنیم.
             </p>
           </div>
 
@@ -52,26 +47,26 @@ export default function About() {
             <div className="relative bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-12">
               <div className="space-y-8">
                 <div className="flex items-center gap-6">
-                  <div className="text-5xl font-bold text-emerald-400">100+</div>
+                  <div className="text-5xl font-bold text-emerald-400">20+</div>
                   <div className="text-slate-300">
-                    <div className="font-semibold">Projects Delivered</div>
-                    <div className="text-sm text-slate-500">Across 15 industries</div>
+                    <div className="font-semibold">پروژه موفق</div>
+                    <div className="text-sm text-slate-500">در بیش از ۱۵ صنعت مختلف</div>
                   </div>
                 </div>
                 <div className="h-px bg-slate-700/50"></div>
                 <div className="flex items-center gap-6">
                   <div className="text-5xl font-bold text-emerald-400">98%</div>
                   <div className="text-slate-300">
-                    <div className="font-semibold">Client Satisfaction</div>
-                    <div className="text-sm text-slate-500">Average rating: 4.9/5</div>
+                    <div className="font-semibold">رضایت همراهان ما</div>
+                    <div className="text-sm text-slate-500">میانگین امتیاز: ۴.۹ از ۵</div>
                   </div>
                 </div>
                 <div className="h-px bg-slate-700/50"></div>
                 <div className="flex items-center gap-6">
-                  <div className="text-5xl font-bold text-emerald-400">3.2M</div>
+                  <div className="text-5xl font-bold text-emerald-400">100K</div>
                   <div className="text-slate-300">
-                    <div className="font-semibold">Users Reached</div>
-                    <div className="text-sm text-slate-500">Through our platforms</div>
+                    <div className="font-semibold">جذب کاربر فعال</div>
+                    <div className="text-sm text-slate-500">از طریق پلتفرم‌های طراحی شده</div>
                   </div>
                 </div>
               </div>
