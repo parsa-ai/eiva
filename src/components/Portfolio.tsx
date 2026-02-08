@@ -1,47 +1,35 @@
-import { ExternalLink, ArrowUpRight, XIcon } from 'lucide-react';
+import { ExternalLink, ArrowUpRight, XIcon, Circle } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const projects = [
   {
-<<<<<<< HEAD
-    title: 'FinanceFlow',
-    category: 'Fintech Platform',
-    description: 'A modern banking dashboard with real-time analytics and seamless transactions.',
+    title: 'MrNet',
+    category: 'وب‌سایت خدمات زیرساخت و اینترنت اشیاء (IoT)',
+    description: 'طراحی پلتفرم ارائه اینترنت بی‌سیم پرسرعت و پایدار برای بیزنس‌ها. تمرکز پروژه بر نمایش قدرت سخت‌افزار (مولتی‌روترها) و پایداری شبکه در مقیاس کشوری بوده است.',
     image: '/mrnet.png',
-    color: 'from-blue-500/20 to-cyan-500/20',
-    stats: ['40% faster', '99.9% uptime'],
-=======
-    title: 'برج ویلیس (WILLIS TOWER)',
-    category: 'وب‌سایت معماری و املاک لوکس',
-    description: 'طراحی و توسعه یک پلتفرم دیجیتال چندرسانه‌ای برای معرفی یکی از مدرن‌ترین برج‌های تجاری-مسکونی. تمرکز اصلی در این پروژه بر نمایش عظمت سازه و ایجاد تجربه بصری غوطه‌ورکننده (Immersive) برای بازدیدکنندگان بوده است.',
-    image: '/images/project-1.png',
-    color: 'from-gray-900/40 to-slate-800/40',
-    stats: ['۳۵ طبقه هوشمند', 'استاندارد طلایی LEED'],
->>>>>>> caac8f0893661fcfcb971c8cf29e52610e88dc8c
+    stats: ['داشبورد نمایش کنترل یکپارچه شبکه و قابلیت مقیاس‌پذیری', 'رابط کاربری مدرن با تم تاریک (Dark Mode) و کنتراست رنگی خیره‌کننده.'],
+
   },
   {
-    title: 'HealthHub',
-    category: 'Healthcare Portal',
-    description: 'Patient management system connecting doctors and patients effortlessly.',
-    image: 'https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800',
-    color: 'from-emerald-500/20 to-teal-500/20',
-    stats: ['10k+ users', '4.8★ rating'],
+    title: 'سپن وت',
+    category: 'پلتفرم فروشگاهی و مجله سلامت حیوانات',
+    description: 'یک فروشگاه آنلاین تخصصی برای محصولات سلامت‌محور پت. این پروژه با هدف ساده‌سازی مسیر خرید و ارائه محتوای آموزشی تخصصی طراحی شده است.',
+    image: '/images/project_01.PNG',
+    stats: ['سیستم فیلترینگ پیشرفته برای چاشنی‌ها و مکمل‌های غذایی', 'دسته‌بندی هوشمند محصولات بر اساس نژاد و جثه (سگ بزرگ، کوچک و گربه)'],
   },
   {
-    title: 'EcoCommerce',
-    category: 'E-commerce',
-    description: 'Sustainable marketplace with carbon-neutral shipping and eco-friendly products.',
-    image: 'https://images.pexels.com/photos/3962285/pexels-photo-3962285.jpeg?auto=compress&cs=tinysrgb&w=800',
-    color: 'from-green-500/20 to-lime-500/20',
-    stats: ['50k products', '2M visits/mo'],
+    title: 'WILLIS TOWER',
+    category: 'وب‌سایت املاک لوکس و معماری',
+    description: 'طراحی و توسعه یک پلتفرم دیجیتال برای معرفی برجی مدرن با رویکرد تعادل میان فضای کار و زندگی. تمرکز بر نمایش جزئیات معماری و ایجاد شکوه بصری.',
+    image: '/images/project_02.png',
+    stats: ['خش‌بندی اختصاصی برای فضاهای اداری، تجاری و تفریحی', 'تایپوگرافی جسورانه و طراحی بخش امکانات رفاهی (Amenities)'],
   },
   {
-    title: 'CreativeStudio',
-    category: 'Portfolio Site',
-    description: 'Stunning portfolio for a design agency showcasing their best work.',
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    color: 'from-purple-500/20 to-pink-500/20',
-    stats: ['100+ projects', '25 awards'],
+    title: 'TekZ',
+    category: 'وب‌سایت شرکتی و خدمات فناوری اطلاعات',
+    description: 'طراحی لندینگ‌پیج مدرن برای یک شرکت پیشرو در حوزه IT و مشاوره تکنولوژی. تمرکز بر نمایش فرآیند محور خدمات و جذب مشتریان سازمانی.',
+    image: '/images/project_03.png',
+    stats: ['طراحی تعاملی کارت‌های خدمات با استفاده از هویت بصری مدرن', 'نمایش مرحله‌به‌مرحله فرآیند اجرای پروژه (از مفهوم تا پشتیبانی)'],
   },
 ];
 
@@ -68,7 +56,7 @@ export default function Portfolio() {
 
         <div
           onClick={(e) => e.stopPropagation()}
-          className='w-11/12 xl:w-8/12 h-[80vh] bg-white rounded-xl overflow-hidden relative'
+          className=' w-11/12 xl:w-8/12 h-[80vh] bg-white rounded-xl overflow-hidden relative'
         >
           <XIcon
             onClick={() => setIsHide(true)}
@@ -115,15 +103,13 @@ export default function Portfolio() {
               }}
             >
               <div className="relative h-64 overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-60 group-hover:opacity-40 transition-opacity duration-500`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-bl  from-black to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500`}></div>
                 <img
                   src={project.image}
                   alt={project.title}
-<<<<<<< HEAD
-                  className="w-full h-full object-top object-cover group-hover:scale-110 transition-transform duration-700"
-=======
-                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
->>>>>>> caac8f0893661fcfcb971c8cf29e52610e88dc8c
+
+                  className="w-full h-full object-cover object-top  group-hover:scale-110 transition-transform duration-700"
+
                 />
                 <div className="absolute top-4 right-4 w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:rotate-45">
                   <ExternalLink className="w-5 h-5 text-white" />
@@ -144,13 +130,14 @@ export default function Portfolio() {
                   {project.description}
                 </p>
 
-                <div className="flex gap-4">
+                {/* <div className="flex flex-col gap-4">
                   {project.stats.map((stat, i) => (
-                    <div key={i} className="px-4 py-2 bg-slate-700/50 rounded-lg border border-slate-600/50">
+                    <div key={i} className="px-4 text-slate-700/50 flex gap-4">
+                      <Circle/>
                       <span className="text-sm text-slate-300 font-medium">{stat}</span>
                     </div>
                   ))}
-                </div>
+                </div> */}
 
                 <button className="mt-6 flex items-center gap-2 text-emerald-400 font-medium group-hover:gap-3 transition-all">
                   View Case Study
