@@ -18,7 +18,7 @@ const projects = [
     stats: ['سیستم فیلترینگ پیشرفته برای چاشنی‌ها و مکمل‌های غذایی', 'دسته‌بندی هوشمند محصولات بر اساس نژاد و جثه (سگ بزرگ، کوچک و گربه)'],
   },
   {
-    title: 'WILLIS TOWER',
+    title: 'WILLIS  TOWER',
     category: 'وب‌سایت املاک لوکس و معماری',
     description: 'طراحی و توسعه یک پلتفرم دیجیتال برای معرفی برجی مدرن با رویکرد تعادل میان فضای کار و زندگی. تمرکز بر نمایش جزئیات معماری و ایجاد شکوه بصری.',
     image: '/images/project_02.png',
@@ -69,10 +69,10 @@ export default function Portfolio() {
           <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
             <span className="text-sm text-emerald-400 font-medium">پروژه ها</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
             پروژه‌های منتخب
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="md:text-xl text-base text-slate-400 max-w-2xl mx-auto">
             نگاهی به برخی از آخرین همکاری‌های ما با برندهای پیشرو.
           </p>
         </div>
