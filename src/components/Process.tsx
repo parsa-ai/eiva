@@ -84,31 +84,6 @@ export default function Process() {
             ))}
           </div>
         </div>
-
-        <div className="mt-20 text-center">
-          <div className="inline-flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300">
-            <div className="flex -space-x-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div
-                  key={i}
-                  className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 border-2 border-slate-800 flex items-center justify-center text-white font-bold"
-                >
-                  {String.fromCharCode(64 + i)}
-                </div>
-              ))}
-            </div>
-            <div className="text-left">
-              <div className="text-white font-semibold">Ready to start your project?</div>
-              <div className="text-slate-400 text-sm">Let's discuss how we can help you succeed.</div>
-            </div>
-            <a
-              href="#contact"
-              className="ml-4 px-6 py-3 bg-emerald-500 text-white rounded-full font-medium hover:bg-emerald-600 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/50 whitespace-nowrap"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );

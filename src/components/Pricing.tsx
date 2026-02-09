@@ -1,59 +1,102 @@
-import { Check, Zap, Star, Crown } from 'lucide-react';
+import { Check, Zap, Star, Crown, X } from 'lucide-react';
+
+const FEATURES = [
+  { key: 'woodmart', label: 'نصب قالب حرفه‌ای WoodMart' },
+  { key: 'woocommerce', label: 'راه‌اندازی فروشگاه با ووکامرس' },
+  { key: 'demo_setup', label: 'استفاده از دمو آماده + تغییر رنگ‌ها' },
+  { key: 'products', label: 'تعریف محصولات ساده و متغیر (سایز، رنگ و…)' },
+  { key: 'otp', label: 'ثبت‌نام و ورود کاربران با شماره موبایل (OTP)' },
+  { key: 'payment', label: 'اتصال به درگاه پرداخت آنلاین' },
+  { key: 'shipping_basic', label: 'سیستم ارسال ساده (هزینه ثابت)' },
+  { key: 'admin_panel', label: 'پنل مدیریت و سفارشات ووکامرس' },
+  { key: 'security_basic', label: 'نصب SSL و تنظیمات امنیتی پایه' },
+  { key: 'training', label: 'آموزش کار با سایت' },
+  { key: 'homepage', label: 'طراحی صفحه اصلی جذاب با المنتور' },
+  { key: 'shipping_advanced', label: 'سیستم ارسال پیشرفته‌تر (بر اساس شهر)' },
+  { key: 'sms_basic', label: 'سیستم پیامکی (ثبت‌نام، سفارش، تغییر وضعیت)' },
+  { key: 'discount', label: 'کد تخفیف و پیشنهادهای ویژه' },
+  { key: 'upsell', label: 'فروش مکمل (محصولات پیشنهادی)' },
+  { key: 'wishlist', label: 'لیست علاقه‌مندی محصولات' },
+  { key: 'seo_basic', label: 'سئو پایه فروشگاهی (مناسب شروع گوگل)' },
+  { key: 'backup', label: 'بکاپ‌گیری خودکار از سایت' },
+  { key: 'landing', label: 'طراحی صفحات فرود (لندینگ) تبلیغاتی' },
+  { key: 'sms_advanced', label: 'پیامک هوشمند (مثل سبد خرید رها شده)' },
+  { key: 'speed', label: 'بهینه‌سازی سرعت سایت' },
+  { key: 'woocommerce_pro', label: 'تنظیمات حرفه‌ای ووکامرس' },
+  { key: 'security_advanced', label: 'امنیت پیشرفته فروشگاهی' },
+  { key: 'support', label: 'پشتیبانی و همراهی پس از تحویل' },
+];
 
 const plans = [
   {
-    name: 'Starter',
+    name: ' پلن اقتصادی | شروع فروش آنلاین',
     icon: Zap,
-    price: '2,500',
+    price: '۱۷/۹۸۰/۰۰۰',
     period: 'one-time',
-    description: 'Perfect for small businesses and personal projects',
-    features: [
-      'Up to 5 pages',
-      'Responsive design',
-      'Basic SEO setup',
-      'Contact form',
-      '1 month support',
-      'Fast delivery (2 weeks)',
-    ],
+    description: 'مناسب کسب‌وکارهایی که می‌خوان سریع وارد فروش آنلاین بشن',
+    features: {
+      woodmart: true,
+      woocommerce: true,
+      demo_setup: true,
+      products: true,
+      otp: true,
+      payment: true,
+      shipping_basic: true,
+      admin_panel: true,
+      security_basic: true,
+      training: true,
+      homepage: true,
+      seo_basic: true,
+      backup: true,
+      support: true,
+    },
     popular: false,
     color: 'from-slate-600 to-slate-700',
     borderColor: 'border-slate-700/50 hover:border-slate-600/50',
   },
   {
-    name: 'Professional',
+    name: 'پلن حرفه‌ای | پرفروش‌ترین انتخاب',
     icon: Star,
-    price: '5,500',
+    price: '۲۷/۸۰۰/۰۰۰',
     period: 'one-time',
-    description: 'For growing businesses with advanced needs',
-    features: [
-      'Up to 15 pages',
-      'Custom design system',
-      'Advanced SEO & analytics',
-      'CMS integration',
-      'API integrations',
-      '3 months support',
-      'Priority delivery (3 weeks)',
-    ],
+    description: 'مناسب کسب‌وکارهای درحال رشد',
+    features: {
+      woodmart: true,
+      woocommerce: true,
+      demo_setup: true,
+      products: true,
+      otp: true,
+      payment: true,
+      shipping_basic: true,
+      admin_panel: true,
+      security_basic: true,
+      training: true,
+      homepage: true,
+
+      shipping_advanced: true,
+      sms_basic: true,
+      discount: true,
+      upsell: true,
+      wishlist: true,
+      seo_basic: true,
+      backup: true,
+      speed: true,
+      woocommerce_pro: true,
+      support: true,
+    },
     popular: true,
     color: 'from-emerald-500 to-teal-500',
     borderColor: 'border-emerald-500/50 hover:border-emerald-400/50',
   },
   {
-    name: 'Enterprise',
+    name: 'پلن پیشرفته | فروش حرفه‌ای و رشد سریع',
     icon: Crown,
-    price: 'Custom',
+    price: '۳۶/۰۰۰/۰۰۰',
     period: 'contact us',
-    description: 'Tailored solutions for complex requirements',
-    features: [
-      'Unlimited pages',
-      'Full brand identity',
-      'Advanced functionality',
-      'Third-party integrations',
-      'Performance optimization',
-      'Dedicated team',
-      '12 months support',
-      'Ongoing maintenance available',
-    ],
+    description: 'مناسب برندها و کسب‌وکارهای جدی',
+    features: Object.fromEntries(
+      FEATURES.map(f => [f.key, true])
+    ),
     popular: false,
     color: 'from-amber-500 to-orange-500',
     borderColor: 'border-amber-500/50 hover:border-amber-400/50',
@@ -82,9 +125,8 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative bg-slate-900/50 backdrop-blur-sm border ${plan.borderColor} rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${
-                plan.popular ? 'ring-2 ring-emerald-500/50 shadow-2xl shadow-emerald-500/20' : ''
-              }`}
+              className={`relative bg-slate-900/50 backdrop-blur-sm border ${plan.borderColor} rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${plan.popular ? 'ring-2 ring-emerald-500/50 shadow-2xl shadow-emerald-500/20' : ''
+                }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-bold rounded-full shadow-lg">
@@ -101,31 +143,53 @@ export default function Pricing() {
 
               <div className="mb-8">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-bold text-white">${plan.price}</span>
-                  {plan.period !== 'contact us' && (
+                  <span className="text-5xl font-bold text-white">{plan.price}</span>
+                  تومان
+                  {/* {plan.period !== 'contact us' && (
                     <span className="text-slate-500">/ {plan.period}</span>
-                  )}
+                  )} */}
                 </div>
               </div>
 
               <div className="space-y-4 mb-8">
-                {plan.features.map((feature, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="w-5 h-5 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="w-3 h-3 text-emerald-400" />
+
+                {FEATURES.map(feature => {
+                  const isEnabled = !!plan.features[feature.key];
+
+                  return (
+                    <div key={feature.key} className="flex items-start gap-3">
+                      <div
+                        className={`w-5 h-5 rounded-full flex items-center justify-center
+          ${isEnabled ? 'bg-emerald-500/20' : 'bg-red-500/20'}`}
+                      >
+                        {isEnabled ? (
+                          <Check className="w-3 h-3 text-emerald-400" />
+                        ) : (
+                          <X className="w-3 h-3 text-red-400" />
+                        )}
+                      </div>
+
+                      <span
+                        className={
+                          isEnabled
+                            ? 'text-slate-300'
+                            : 'text-slate-500 line-through'
+                        }
+                      >
+                        {feature.label}
+                      </span>
                     </div>
-                    <span className="text-slate-300">{feature}</span>
-                  </div>
-                ))}
+                  );
+                })}
+
               </div>
 
               <a
                 href="#contact"
-                className={`block w-full py-4 text-center rounded-full font-semibold transition-all duration-300 ${
-                  plan.popular
-                    ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:shadow-lg hover:shadow-emerald-500/50'
-                    : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
-                }`}
+                className={`block w-full py-4 text-center rounded-full font-semibold transition-all duration-300 ${plan.popular
+                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:shadow-lg hover:shadow-emerald-500/50'
+                  : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
+                  }`}
               >
                 {plan.price === 'Custom' ? 'Contact Us' : 'Get Started'}
               </a>
@@ -135,9 +199,9 @@ export default function Pricing() {
 
         <div className="mt-16 text-center">
           <p className="text-slate-400">
-            Need something different?{' '}
+            دنبال یه چیز خاص می‌گردی که هیچ‌جا نیست؟{' '}
             <a href="#contact" className="text-emerald-400 hover:text-emerald-300 font-medium">
-              Let's talk custom solutions
+              بریم واسه گپ و گفت!
             </a>
           </p>
         </div>

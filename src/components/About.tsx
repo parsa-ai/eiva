@@ -47,7 +47,7 @@ export default function About() {
             <div className="relative bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-12">
               <div className="space-y-8">
                 <div className="flex items-center gap-6">
-                  <div className="text-5xl font-bold text-emerald-400">20+</div>
+                  <div className="text-5xl font-bold text-emerald-400">۲۰+</div>
                   <div className="text-slate-300">
                     <div className="font-semibold">پروژه موفق</div>
                     <div className="text-sm text-slate-500">در بیش از ۱۵ صنعت مختلف</div>
@@ -55,7 +55,7 @@ export default function About() {
                 </div>
                 <div className="h-px bg-slate-700/50"></div>
                 <div className="flex items-center gap-6">
-                  <div className="text-5xl font-bold text-emerald-400">98%</div>
+                  <div className="text-5xl font-bold text-emerald-400">۹۸%</div>
                   <div className="text-slate-300">
                     <div className="font-semibold">رضایت همراهان ما</div>
                     <div className="text-sm text-slate-500">میانگین امتیاز: ۴.۹ از ۵</div>
@@ -63,7 +63,7 @@ export default function About() {
                 </div>
                 <div className="h-px bg-slate-700/50"></div>
                 <div className="flex items-center gap-6">
-                  <div className="text-5xl font-bold text-emerald-400">100K</div>
+                  <div className="text-5xl font-bold text-emerald-400">۱۰۰K</div>
                   <div className="text-slate-300">
                     <div className="font-semibold">جذب کاربر فعال</div>
                     <div className="text-sm text-slate-500">از طریق پلتفرم‌های طراحی شده</div>

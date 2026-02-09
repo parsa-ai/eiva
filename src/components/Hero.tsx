@@ -16,7 +16,7 @@ export default function Hero() {
           <span className="text-sm text-emerald-300">استودیو ایوا</span>
         </div>
 
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-6 tracking-tight">
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold text-white mb-6 tracking-tight">
           <span className="inline-block hover:scale-105 transition-transform duration-300">A</span>
           <span className="inline-block hover:scale-105 transition-transform duration-300">V</span>
           <span className="inline-block hover:scale-105 transition-transform duration-300">I</span>
@@ -27,7 +27,6 @@ export default function Hero() {
           خلق تجربه‌های دیجیتالی که
           <span className="text-emerald-400 font-semibold"> هویت شما </span>
           را می‌سازند.
-          .
         </p>
 
         <p className="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
