@@ -113,10 +113,10 @@ export default function Pricing() {
           <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
             <span className="text-sm text-emerald-400 font-medium">تعرفه</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
             تعرفه‌های شفاف
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="md:text-xl text-base text-slate-400 max-w-2xl mx-auto">
             پلنی که با نیازتان همخوانی دارد را انتخاب کنید.
           </p>
         </div>
