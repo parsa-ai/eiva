@@ -48,7 +48,7 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="tel:+989167652413"
               className="px-6 py-2 bg-emerald-500 text-white rounded-full font-medium hover:bg-emerald-600 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/50"
             >
               تماس با ما

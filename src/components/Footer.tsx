@@ -2,7 +2,6 @@ import { Mail, MapPin, Phone, Twitter, Linkedin, Github } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
   return (
     <footer id="contact" className="bg-slate-950 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
@@ -12,8 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-3xl font-bold text-white mb-4">EIVA</h3>
             <p className="text-slate-400 mb-6 max-w-md leading-relaxed">
-              We design and develop digital experiences that work. Let's build something
-              exceptional together.
+              ما در ایوا استودیو، با ترکیب استراتژی، طراحی مدرن و تکنولوژی، ایده‌های شما را به تجربه‌های دیجیتالِ ماندگار تبدیل می‌کنیم. تخصص ما خلق وب‌سایت‌ها و پلتفرم‌هایی است که علاوه بر زیبایی خیره‌کننده، مسیر رشد کسب‌وکار شما را هموار می‌کنند.
             </p>
             <div className="flex gap-4">
               <a
@@ -38,9 +36,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-white font-semibold mb-4">دسترسی سریع</h4>
             <ul className="space-y-3">
-              {['Portfolio', 'About', 'Process', 'Pricing', 'FAQ'].map((item) => (
+              {['پروژه ها', 'درباره ایوا', 'فرایند', 'تعرفه', 'سوالات. متداول'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
@@ -54,7 +52,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Get In Touch</h4>
+            <h4 className="text-white font-semibold mb-4">با ما در ارتباط باشید</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
@@ -68,16 +66,17 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+989167652413"
                   className="text-slate-400 hover:text-emerald-400 transition-colors"
+                  dir="ltr"
                 >
-                  +1 (234) 567-890
+                  +98 916 765 2413
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <span className="text-slate-400">
-                  San Francisco, CA
+                  خوزستان - اهواز
                 </span>
               </li>
             </ul>

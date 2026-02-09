@@ -41,7 +41,7 @@ export default function Process() {
           <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
             <span className="text-sm text-emerald-400 font-medium">فرایند</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             مسیر خلق تمایز
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">

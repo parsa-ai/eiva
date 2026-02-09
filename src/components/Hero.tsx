@@ -41,12 +41,6 @@ export default function Hero() {
             مشاهده نمونه کارها
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
-          <a
-            href="#contact"
-            className="px-8 py-4 bg-white/5 backdrop-blur-sm text-white rounded-full font-medium hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20"
-          >
-            با تیم ما آشنا شوید
-          </a>
         </div>
       </div>
 

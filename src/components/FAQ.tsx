@@ -28,7 +28,7 @@ export default function FAQ() {
           <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
             <span className="text-sm text-emerald-400 font-medium">سوالات متداول</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             پاسخ به سوالات شما
           </h2>
           {/* <p className="text-xl text-slate-400">
@@ -44,9 +44,9 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left group"
+                className="w-full px-8 py-6 flex gap-4 items-center justify-between text-right group"
               >
-                <span className="text-lg font-semibold text-white pr-8 group-hover:text-emerald-400 transition-colors">
+                <span className="text-lg font-semibold text-white group-hover:text-emerald-400 transition-colors">
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0 w-10 h-10 bg-emerald-500/10 rounded-full flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
@@ -59,9 +59,8 @@ export default function FAQ() {
               </button>
 
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
               >
                 <div className="px-8 pb-6">
                   <p className="text-slate-400 leading-relaxed">{faq.answer}</p>
@@ -77,7 +76,7 @@ export default function FAQ() {
             بیایید با هم چیزی شگفت‌انگیز بسازیم.
           </p>
           <a
-            href="#contact"
+            href="tel:+989167652413"
             className="inline-block px-8 py-4 bg-emerald-500 text-white rounded-full font-medium hover:bg-emerald-600 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/50"
           >
             همین حالا با ما تماس بگیرید

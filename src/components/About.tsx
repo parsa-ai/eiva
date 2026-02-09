@@ -34,7 +34,7 @@ export default function About() {
             <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
               <span className="text-sm text-emerald-400 font-medium">درباره ایوا</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 ">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 ">
               فراتر از یک آژانس دیجیتال؛ ما شریک رشد شما هستیم.
             </h2>
             <p className="text-xl text-slate-400 mb-6 leading-relaxed">
