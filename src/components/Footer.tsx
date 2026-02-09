@@ -1,7 +1,15 @@
 import { Mail, MapPin, Phone, Twitter, Linkedin, Github } from 'lucide-react';
 
+const navItems = [
+  { name: 'خانه', href: '#home' },
+  { name: 'پروژه‌ها', href: '#portfolio' },
+  { name: 'درباره ایوا', href: '#about' },
+  { name: 'فرایند', href: '#process' },
+  { name: 'تعرفه', href: '#pricing' },
+  { name: 'سوالات متداول', href: '#faq' },
+];
+const currentYear = new Date().getFullYear();
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
   return (
     <footer id="contact" className="bg-slate-950 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
@@ -38,13 +46,13 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">دسترسی سریع</h4>
             <ul className="space-y-3">
-              {['پروژه ها', 'درباره ایوا', 'فرایند', 'تعرفه', 'سوالات. متداول'].map((item) => (
-                <li key={item}>
+              {navItems.map((item) => (
+                <li key={item.name}>
                   <a
-                    href={`#${item.toLowerCase()}`}
+                    href={`${item.href.toLowerCase()}`}
                     className="text-slate-400 hover:text-emerald-400 transition-colors"
                   >
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
