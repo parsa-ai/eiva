@@ -130,7 +130,7 @@ export default function Pricing() {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-linear-to-r from-emerald-500 to-teal-500 text-white text-sm font-bold rounded-full shadow-lg">
-                  MOST POPULAR
+                  پیشنهاد ایوا
                 </div>
               )}
 
@@ -144,7 +144,7 @@ export default function Pricing() {
               <div className="mb-8">
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-bold text-white">{plan.price}</span>
-                  تومان
+                  <span className='text-white'>تومان</span>
                   {/* {plan.period !== 'contact us' && (
                     <span className="text-slate-500">/ {plan.period}</span>
                   )} */}
@@ -191,7 +191,7 @@ export default function Pricing() {
                   : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
                   }`}
               >
-                {plan.price === 'Custom' ? 'Contact Us' : 'Get Started'}
+                {plan.price === 'Custom' ? 'Contact Us' : 'شروع کنید'}
               </a>
             </div>
           ))}

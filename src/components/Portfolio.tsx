@@ -5,14 +5,14 @@ const projects = [
     title: 'MrNet',
     category: 'وب‌سایت خدمات زیرساخت و اینترنت اشیاء (IoT)',
     description: 'طراحی پلتفرم ارائه اینترنت بی‌سیم پرسرعت و پایدار برای بیزنس‌ها. تمرکز پروژه بر نمایش قدرت سخت‌افزار (مولتی‌روترها) و پایداری شبکه در مقیاس کشوری بوده است.',
-    image: '/images/project_04.png',
+    image: '/images/project_04.webp',
     stats: ['داشبورد نمایش کنترل یکپارچه شبکه و قابلیت مقیاس‌پذیری', 'رابط کاربری مدرن با تم تاریک (Dark Mode) و کنتراست رنگی خیره‌کننده.'],
   },
   {
     title: 'سپن وت',
     category: 'پلتفرم فروشگاهی و مجله سلامت حیوانات',
     description: 'یک فروشگاه آنلاین تخصصی برای محصولات سلامت‌محور پت. این پروژه با هدف ساده‌سازی مسیر خرید و ارائه محتوای آموزشی تخصصی طراحی شده است.',
-    image: '/images/project_01.PNG',
+    image: '/images/project_01.webp',
     stats: ['سیستم فیلترینگ پیشرفته برای چاشنی‌ها و مکمل‌های غذایی', 'دسته‌بندی هوشمند محصولات بر اساس نژاد و جثه (سگ بزرگ، کوچک و گربه)'],
   },
   {
@@ -71,7 +71,7 @@ export default function Portfolio() {
                     alt={project.title}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover object-top  group-hover:scale-110 transition-transform duration-700"
+                    className=" object-cover object-top  "
 
                   />
                   
