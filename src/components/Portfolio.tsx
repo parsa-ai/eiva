@@ -39,7 +39,7 @@ export default function Portfolio() {
     <>
       <Modal isHide={isHide} setIsHide={setIsHide} indexOfPrj={indexOfPrj} />
       <section id="portfolio" className="py-32 bg-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[64px_64px]"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
@@ -65,7 +65,7 @@ export default function Portfolio() {
                 }}
               >
                 <div className="relative h-64 overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-bl  from-black to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500`}></div>
+                  <div className={`absolute inset-0 bg-linear-to-bl  from-black to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500`}></div>
                   <img
                     src={project.image}
                     alt={project.title}

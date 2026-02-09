@@ -2,8 +2,8 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-transparent to-transparent"></div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-slate-800">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,var(--tw-gradient-stops))] from-emerald-900/20 via-transparent to-transparent"></div>
 
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -11,7 +11,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-8 backdrop-blur-sm hover:bg-emerald-500/20 transition-all duration-300 group cursor-default">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-8 backdrop-blur-xs hover:bg-emerald-500/20 transition-all duration-300 group cursor-default">
           <Sparkles className="w-4 h-4 text-emerald-400 group-hover:rotate-180 transition-transform duration-500" />
           <span className="text-sm text-emerald-300">استودیو ایوا</span>
         </div>

@@ -21,7 +21,7 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="py-32 bg-slate-900 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[64px_64px]"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
@@ -40,7 +40,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300"
+              className="bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -49,7 +49,7 @@ export default function FAQ() {
                 <span className="text-lg font-semibold text-white group-hover:text-emerald-400 transition-colors">
                   {faq.question}
                 </span>
-                <div className="flex-shrink-0 w-10 h-10 bg-emerald-500/10 rounded-full flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
+                <div className="shrink-0 w-10 h-10 bg-emerald-500/10 rounded-full flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
                   {openIndex === index ? (
                     <Minus className="w-5 h-5 text-emerald-400" />
                   ) : (
@@ -70,7 +70,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        <div className="mt-16 text-center bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300">
+        <div className="mt-16 text-center bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300">
           <h3 className="text-2xl font-bold text-white mb-4">برای تحول در کسب‌وکارتان آماده‌اید؟</h3>
           <p className="text-slate-400 mb-6">
             بیایید با هم چیزی شگفت‌انگیز بسازیم.

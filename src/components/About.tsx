@@ -26,7 +26,7 @@ const values = [
 export default function About() {
   return (
     <section id="about" className="py-32 bg-slate-950 relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-linear-to-r from-transparent via-emerald-500/50 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
@@ -43,8 +43,8 @@ export default function About() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-3xl blur-3xl"></div>
-            <div className="relative bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-12">
+            <div className="absolute inset-0 bg-linear-to-br from-emerald-500/20 to-teal-500/20 rounded-3xl blur-3xl"></div>
+            <div className="relative bg-slate-900/50 backdrop-blur-xs border border-slate-700/50 rounded-3xl p-12">
               <div className="space-y-8">
                 <div className="flex items-center gap-6">
                   <div className="text-5xl font-bold text-emerald-400">۲۰+</div>
@@ -78,7 +78,7 @@ export default function About() {
           {values.map((value, index) => (
             <div
               key={index}
-              className="group relative bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10"
+              className="group relative bg-slate-900/50 backdrop-blur-xs border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10"
             >
               <div className="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition-colors group-hover:scale-110 transition-transform duration-300">
                 <value.icon className="w-7 h-7 text-emerald-400" />

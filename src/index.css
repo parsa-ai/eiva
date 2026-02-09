@@ -1,68 +1,90 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
+@utility delay-700 {
+  animation-delay: 700ms;
 }
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
+@layer utilities {
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: 'Peyda';
-  src: url('/fonts/Peyda/Peyda-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Peyda';
+    src: url('/fonts/Peyda/Peyda-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
 }
 
 @layer base {
@@ -75,12 +97,6 @@
   }
   a{
     font-family: inherit;
-  }
-}
-
-@layer utilities {
-  .delay-700 {
-    animation-delay: 700ms;
   }
 }
 

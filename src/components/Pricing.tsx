@@ -106,7 +106,7 @@ const plans = [
 export default function Pricing() {
   return (
     <section id="pricing" className="py-32 bg-slate-950 relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-linear-to-r from-transparent via-emerald-500/50 to-transparent"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
@@ -125,16 +125,16 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative bg-slate-900/50 backdrop-blur-sm border ${plan.borderColor} rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${plan.popular ? 'ring-2 ring-emerald-500/50 shadow-2xl shadow-emerald-500/20' : ''
+              className={`relative bg-slate-900/50 backdrop-blur-xs border ${plan.borderColor} rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${plan.popular ? 'ring-2 ring-emerald-500/50 shadow-2xl shadow-emerald-500/20' : ''
                 }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-bold rounded-full shadow-lg">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-linear-to-r from-emerald-500 to-teal-500 text-white text-sm font-bold rounded-full shadow-lg">
                   MOST POPULAR
                 </div>
               )}
 
-              <div className={`w-16 h-16 bg-gradient-to-br ${plan.color} rounded-2xl flex items-center justify-center mb-6`}>
+              <div className={`w-16 h-16 bg-linear-to-br ${plan.color} rounded-2xl flex items-center justify-center mb-6`}>
                 <plan.icon className="w-8 h-8 text-white" />
               </div>
 
@@ -187,7 +187,7 @@ export default function Pricing() {
               <a
                 href="#contact"
                 className={`block w-full py-4 text-center rounded-full font-semibold transition-all duration-300 ${plan.popular
-                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:shadow-lg hover:shadow-emerald-500/50'
+                  ? 'bg-linear-to-r from-emerald-500 to-teal-500 text-white hover:shadow-lg hover:shadow-emerald-500/50'
                   : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
                   }`}
               >

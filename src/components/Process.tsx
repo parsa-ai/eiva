@@ -34,7 +34,7 @@ const steps = [
 export default function Process() {
   return (
     <section id="process" className="py-32 bg-slate-900 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-900/10 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-emerald-900/10 via-transparent to-transparent"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
@@ -50,7 +50,7 @@ export default function Process() {
         </div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-emerald-500/20 via-emerald-500/50 to-emerald-500/20 -translate-y-1/2"></div>
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-linear-to-r from-emerald-500/20 via-emerald-500/50 to-emerald-500/20 -translate-y-1/2"></div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
@@ -58,8 +58,8 @@ export default function Process() {
                 key={index}
                 className="group relative"
               >
-                <div className="relative bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 h-full">
-                  <div className="absolute -top-6 left-8 w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl items-center justify-center text-white font-bold shadow-lg shadow-emerald-500/50 group-hover:scale-110 transition-transform duration-300 hidden md:flex">
+                <div className="relative bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 h-full">
+                  <div className="absolute -top-6 left-8 w-12 h-12 bg-linear-to-br from-emerald-500 to-teal-500 rounded-xl items-center justify-center text-white font-bold shadow-lg shadow-emerald-500/50 group-hover:scale-110 transition-transform duration-300 hidden md:flex">
                     {step.number}
                   </div>
 

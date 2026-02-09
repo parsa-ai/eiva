@@ -12,7 +12,7 @@ const currentYear = new Date().getFullYear();
 export default function Footer() {
   return (
     <footer id="contact" className="bg-slate-950 relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-linear-to-r from-transparent via-emerald-500/50 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -24,19 +24,19 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
+                className="w-10 h-10 bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
               >
                 <Twitter className="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
+                className="w-10 h-10 bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
               >
                 <Linkedin className="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
+                className="w-10 h-10 bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
               >
                 <Github className="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors" />
               </a>
@@ -63,7 +63,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">با ما در ارتباط باشید</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <Mail className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                 <a
                   href="mailto:hello@eiva.studio"
                   className="text-slate-400 hover:text-emerald-400 transition-colors"
@@ -72,7 +72,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <Phone className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                 <a
                   href="tel:+989167652413"
                   className="text-slate-400 hover:text-emerald-400 transition-colors"
@@ -82,7 +82,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                 <span className="text-slate-400">
                   خوزستان - اهواز
                 </span>
@@ -108,7 +108,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-emerald-500/20 to-transparent"></div>
     </footer>
   );
 }
