@@ -1,5 +1,6 @@
-import { ExternalLink, ArrowUpRight, XIcon, Circle } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { ExternalLink, ArrowUpRight, XIcon } from 'lucide-react';
+import { useLayoutEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 const projects = [
   {
@@ -8,7 +9,6 @@ const projects = [
     description: 'طراحی پلتفرم ارائه اینترنت بی‌سیم پرسرعت و پایدار برای بیزنس‌ها. تمرکز پروژه بر نمایش قدرت سخت‌افزار (مولتی‌روترها) و پایداری شبکه در مقیاس کشوری بوده است.',
     image: '/mrnet.png',
     stats: ['داشبورد نمایش کنترل یکپارچه شبکه و قابلیت مقیاس‌پذیری', 'رابط کاربری مدرن با تم تاریک (Dark Mode) و کنتراست رنگی خیره‌کننده.'],
-
   },
   {
     title: 'سپن وت',
@@ -36,46 +36,32 @@ const projects = [
 export default function Portfolio() {
   const [isHide, setIsHide] = useState(true)
   const [indexOfPrj, setindexOfPrj] = useState(0)
-  useEffect(() => {
-    if (!isHide) {
-
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
+  useLayoutEffect(() => {
+    const originalOverflow = document.body.style.overflow;
+    if (!isHide && originalOverflow !== 'hidden') {
+      document.body.style.overflow = 'hidden';
     }
-
     return () => {
-      document.body.style.overflow = "";
-      document.body.style.position = "";
+      document.body.style.overflow = originalOverflow;
     };
   }, [isHide]);
+
   return (
     <section id="portfolio" className="py-32 bg-slate-900 relative overflow-hidden">
-      <div onClick={() => { setIsHide(true) }} className={`fixed z-50 bg-slate-900/30 backdrop-blur-lg w-screen h-screen top-0 right-0 ${isHide ? "hidden" : "flex"} justify-center items-center`}>
-
-
-        <div
-          onClick={(e) => e.stopPropagation()}
-          className=' w-11/12 xl:w-8/12 h-[80vh] bg-white rounded-xl overflow-hidden relative'
-        >
-          <XIcon
-            onClick={() => setIsHide(true)}
-            className='cursor-pointer absolute top-3 left-3 bg-white stroke-black rounded-xl p-1 w-8 h-8 z-10'
-          />
-
-          <div
-            className='w-full h-full overflow-y-auto'
-            style={{ WebkitOverflowScrolling: "touch" }}
-            dir='ltr'
-          >
-            <img
-              className='w-full object-contain'
-              src={projects[indexOfPrj].image}
-              alt=""
+      {!isHide && createPortal(
+        <div onClick={() => setIsHide(true)} className="fixed z-50 bg-slate-900/30 backdrop-blur-lg w-screen h-screen top-0 right-0 flex justify-center items-center">
+          <div onClick={(e) => e.stopPropagation()} className='w-11/12 xl:w-8/12 h-[80vh] bg-white rounded-xl overflow-hidden relative'>
+            <XIcon
+              onClick={() => setIsHide(true)}
+              className='cursor-pointer absolute top-3 left-3 bg-white stroke-black rounded-xl p-1 w-8 h-8 z-10'
             />
+            <div className='w-full h-full overflow-y-auto' style={{ WebkitOverflowScrolling: "touch" }} dir='ltr'>
+              <img className='w-full object-contain' src={projects[indexOfPrj].image} alt="" />
+            </div>
           </div>
-        </div>
-      </div>
+        </div>,
+        document.body
+      )}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -95,7 +81,7 @@ export default function Portfolio() {
           {projects.map((project, index) => (
 
             <div
-              key={index}
+              key={project.title}
               className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-2"
               onClick={() => {
                 setIsHide(false);
