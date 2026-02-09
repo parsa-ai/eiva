@@ -34,10 +34,10 @@ export default function About() {
             <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
               <span className="text-sm text-emerald-400 font-medium">درباره ایوا</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 ">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-3 ">
               فراتر از یک آژانس دیجیتال؛ ما شریک رشد شما هستیم.
             </h2>
-            <p className="text-xl text-slate-400 mb-6 leading-relaxed">
+            <p className="md:text-xl text-base text-slate-400 mb-6 leading-relaxed">
               در استودیو ایوا (EIVA)، باور داریم که هر ایده بزرگ شایسته یک نمایش بی‌نقص است. تیم ما متشکل از متخصصان خلاق و برنامه‌نویسان با‌تجربه است که با تمرکز بر جزئیات و نیاز کاربر ایرانی، راه‌حل‌هایی نوآورانه خلق می‌کنند. ما فقط کد نمی‌زنیم و طرح نمی‌کشیم؛ ما داستان برند شما را روایت می‌کنیم.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function About() {
               <div className="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition-colors group-hover:scale-110 transition-transform duration-300">
                 <value.icon className="w-7 h-7 text-emerald-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
+              <h3 className="md:text-2xl text-xl font-bold text-white mb-3">{value.title}</h3>
               <p className="text-slate-400 leading-relaxed">{value.description}</p>
             </div>
           ))}

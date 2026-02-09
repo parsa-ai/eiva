@@ -83,11 +83,11 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="tel:+989167652413"
               onClick={() => setIsOpen(false)}
               className="block px-6 py-3 bg-emerald-500 text-white rounded-full font-medium hover:bg-emerald-600 transition-colors text-center"
             >
-              Contact
+              تماس با ما
             </a>
           </div>
         </div>

@@ -28,7 +28,7 @@ export default function FAQ() {
           <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
             <span className="text-sm text-emerald-400 font-medium">سوالات متداول</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
             پاسخ به سوالات شما
           </h2>
           {/* <p className="text-xl text-slate-400">

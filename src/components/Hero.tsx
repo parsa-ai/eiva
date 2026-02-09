@@ -16,20 +16,20 @@ export default function Hero() {
           <span className="text-sm text-emerald-300">استودیو ایوا</span>
         </div>
 
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold text-white mb-6 tracking-tight">
+        <h1 className="text-7xl md:text-9xl lg:text-9xl font-extrabold text-white mb-6 tracking-tight">
           <span className="inline-block hover:scale-105 transition-transform duration-300">A</span>
           <span className="inline-block hover:scale-105 transition-transform duration-300">V</span>
           <span className="inline-block hover:scale-105 transition-transform duration-300">I</span>
           <span className="inline-block hover:scale-105 transition-transform duration-300">E</span>
         </h1>
 
-        <p className="text-xl md:text-2xl lg:text-3xl text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-2xl md:text-3xl lg:text-3xl text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed">
           خلق تجربه‌های دیجیتالی که
           <span className="text-emerald-400 font-semibold"> هویت شما </span>
           را می‌سازند.
         </p>
 
-        <p className="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-base md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
           ما در استودیو ایوا، هنر طراحی را با قدرت تکنولوژی ادغام می‌کنیم تا کسب‌وکار شما در دنیای دیجیتال متمایز دیده شود.
         </p>
 

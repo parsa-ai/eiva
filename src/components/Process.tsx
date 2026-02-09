@@ -41,10 +41,10 @@ export default function Process() {
           <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
             <span className="text-sm text-emerald-400 font-medium">فرایند</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
             مسیر خلق تمایز
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="md:text-xl text-base text-slate-400 max-w-2xl mx-auto">
             متدولوژی آزموده‌ی ما؛ فرآیندی هوشمند که ایده‌های خام شما را به تجربه‌های دیجیتال استثنایی تبدیل می‌کند.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function Process() {
                     <div className="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition-colors">
                       <step.icon className="w-7 h-7 text-emerald-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
+                    <h3 className="md:text-2xl text-xl font-bold text-white mb-4">{step.title}</h3>
                     <p className="text-slate-400 leading-relaxed mb-6">{step.description}</p>
                   </div>
 
