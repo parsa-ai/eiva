@@ -156,7 +156,7 @@ export default function Pricing() {
         <div className="mt-12 sm:mt-16 lg:mt-20 text-center">
           <p className="text-slate-400 text-sm sm:text-base">
             پلن دلخواهت رو پیدا نکردی؟{' '}
-            <a href="#contact" className="text-emerald-400 hover:text-emerald-300 font-medium underline-offset-4 hover:underline">
+            <a href="tel:+989167652413" className="text-emerald-400 hover:text-emerald-300 font-medium underline-offset-4 hover:underline">
               تماس بگیر با هم بسازیمش
             </a>
           </p>
