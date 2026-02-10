@@ -11,7 +11,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-8 backdrop-blur-xs hover:bg-emerald-500/20 transition-all duration-300 group cursor-default">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-8  hover:bg-emerald-500/20 transition-all duration-300 group cursor-default">
           <Sparkles className="w-4 h-4 text-emerald-400 group-hover:rotate-180 transition-transform duration-500" />
           <span className="text-sm text-emerald-300">استودیو ایوا</span>
         </div>

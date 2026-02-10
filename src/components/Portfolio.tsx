@@ -132,7 +132,7 @@ function Modal({ indexOfPrj, isHide, setIsHide }: { indexOfPrj: number, isHide: 
   if (isHide) return <></>
   return (
     <div onClick={() => setIsHide(true)}
-      className="fixed z-50 bg-slate-900/30 backdrop-blur-lg w-screen h-screen top-0 right-0 flex justify-center items-center">
+      className="fixed z-50 bg-slate-900/90  w-screen h-screen top-0 right-0 flex justify-center items-center">
       <div onClick={(e) => e.stopPropagation()} className='w-11/12 xl:w-8/12 h-[80vh] bg-white rounded-xl overflow-hidden relative'>
         <XIcon
           onClick={() => setIsHide(true)}

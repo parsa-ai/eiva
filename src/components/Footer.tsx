@@ -21,26 +21,26 @@ export default function Footer() {
             <p className="text-slate-400 mb-6 max-w-md leading-relaxed">
               ما در ایوا استودیو، با ترکیب استراتژی، طراحی مدرن و تکنولوژی، ایده‌های شما را به تجربه‌های دیجیتالِ ماندگار تبدیل می‌کنیم. تخصص ما خلق وب‌سایت‌ها و پلتفرم‌هایی است که علاوه بر زیبایی خیره‌کننده، مسیر رشد کسب‌وکار شما را هموار می‌کنند.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
+                className="w-10 h-10 bg-slate-800/50  border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
               >
                 <Twitter className="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
+                className="w-10 h-10 bg-slate-800/50  border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
               >
                 <Linkedin className="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
+                className="w-10 h-10 bg-slate-800/50 border border-slate-700/50 rounded-full flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
               >
                 <Github className="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -92,18 +92,10 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800/50">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-slate-500 text-sm">
               © {currentYear} EIVA. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm">
-              <a href="#" className="text-slate-500 hover:text-emerald-400 transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-slate-500 hover:text-emerald-400 transition-colors">
-                Terms of Service
-              </a>
-            </div>
           </div>
         </div>
       </div>

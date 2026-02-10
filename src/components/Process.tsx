@@ -58,7 +58,7 @@ export default function Process() {
                 key={index}
                 className="group relative"
               >
-                <div className="relative bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 h-full">
+                <div className="relative bg-slate-800/50 md:backdrop-blur-xs border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 h-full">
                   <div className="absolute -top-6 left-8 w-12 h-12 bg-linear-to-br from-emerald-500 to-teal-500 rounded-xl items-center justify-center text-white font-bold shadow-lg shadow-emerald-500/50 group-hover:scale-110 transition-transform duration-300 hidden md:flex">
                     {step.number}
                   </div>

@@ -40,7 +40,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300"
+              className="bg-slate-800/80  border border-slate-700/50 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -70,7 +70,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        <div className="mt-16 text-center bg-slate-800/50 backdrop-blur-xs border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300">
+        <div className="mt-16 text-center bg-slate-800/80  border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 transition-all duration-300">
           <h3 className="text-2xl font-bold text-white mb-4">برای تحول در کسب‌وکارتان آماده‌اید؟</h3>
           <p className="text-slate-400 mb-6">
             بیایید با هم چیزی شگفت‌انگیز بسازیم.

@@ -31,7 +31,7 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-slate-950/80 backdrop-blur-lg border-b border-white/10 shadow-lg'
+          ? 'bg-slate-950/80 backdrop-blur-md border-b border-white/10 shadow-lg'
           : 'bg-transparent border-white/0 border-b'
         }`}
     >
@@ -70,7 +70,7 @@ export default function Navigation() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-slate-950/95 backdrop-blur-lg border-t border-white/10">
+        <div className="md:hidden bg-slate-950/95  border-t border-white/10">
           <div className="px-6 py-4 space-y-4">
             {navItems.map((item) => (
               <a
