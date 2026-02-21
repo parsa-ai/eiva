@@ -24,9 +24,9 @@ export default function Hero() {
         </h1>
 
         <p className="text-2xl md:text-3xl lg:text-3xl text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed">
-          اعتبار
+          اعتبارِ
           <span className="text-emerald-400 font-semibold"> همیشگی </span>
-          در دنیای دیجیتال
+          در دنیایِ دیجیتال
         </p>
 
         <p className="text-base md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
